@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<!-- ============ ARBuildingBase ============ -->
+
+	<ThingDef Name="ARBuildingBase" Abstract="True">
+		<category>Building</category>
+		<soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+		<selectable>true</selectable>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+		<constructEffect>ConstructMetal</constructEffect>
+		<repairEffect>Repair</repairEffect>
+		<filthLeaving>BuildingRubble</filthLeaving>
+		<drawGUIOverlay>false</drawGUIOverlay>
+		<castEdgeShadows>true</castEdgeShadows>
+		<staticSunShadowHeight>0.20</staticSunShadowHeight>
+		<thingClass>Building_WorkTable</thingClass>
+		<altitudeLayer>Building</altitudeLayer>
+		<designationCategory>Production</designationCategory>
+		<passability>PassThroughOnly</passability>
+		<surfaceType>Item</surfaceType>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<damageData>
+				<rect>(0,0.35,1,0.3)</rect>
+			</damageData>
+		</graphicData>
+		<statBases>
+			<WorkToMake>2000</WorkToMake>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+		</statBases>
+	</ThingDef>
+
+	<!-- ============ MoistureConverter ============ -->
+
+	<ThingDef ParentName="ARBuildingBase">
+		<defName>AdRef_ThingDefs_Moistureconverter</defName>
+		<label>Moisture Converter</label>
+		<description>A survival apparatus used to distill moisture into drinkable brews</description>
+		<size>(1,1)</size>
+		<graphicData>
+			<texPath>Moistureconverter</texPath>
+			<drawSize>(1,1)</drawSize>
+		</graphicData>
+		<statBases>
+			<WorkToMake>1000</WorkToMake>
+		</statBases>
+		<costList>
+			<Steel>75</Steel>
+			<Silver>15</Silver>
+			<Component>2</Component>
+		</costList>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<startElectricalFires>true</startElectricalFires>
+				<basePowerConsumption>150</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Breakdownable"/>
+			<li Class="CompProperties_HeatPusher">
+				<heatPerSecond>5</heatPerSecond>
+			</li>
+			<li Class="CompProperties_AffectedByFacilities">
+				<linkableFacilities>
+				  <li>ToolCabinet</li>
+				</linkableFacilities>
+			</li>
+		</comps>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
+		<building>
+			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+		</building>
+		<recipes>
+			<li>AdRef_RecipeDefs_PrepareElectrodrinkRaw</li>
+		</recipes>
+		<researchPrerequisites>
+			<li>AdRef_ResearchProjects_ARAdaptationRefusal</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+	<!-- ============ AlgaeKryllFarm ============ -->
+
+	<ThingDef ParentName="ARBuildingBase">
+		<defName>AdRef_ThingDefs_AlgaeKryllFarm</defName>
+		<label>Algae-Kryll Farm</label>
+		<description>An enclosed artificial ecosystem used to produce food</description>
+		<size>(2,1)</size>
+		<graphicData>
+			<texPath>AlgaeKryllFarm</texPath>
+			<drawSize>(2,1)</drawSize>
+		</graphicData>
+		<costList>
+			<Steel>100</Steel>
+			<Silver>10</Silver>
+			<Component>2</Component>
+		</costList>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<startElectricalFires>true</startElectricalFires>
+				<basePowerConsumption>150</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Breakdownable"/>
+			<li Class="CompProperties_HeatPusher">
+				<heatPerSecond>7</heatPerSecond>
+			</li>
+		</comps>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
+		<building>
+			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+		</building>
+		<recipes>
+			<li>AdRef_RecipeDefs_PrepareAlgaeKryllRaw</li>
+		</recipes>
+		<researchPrerequisites>
+			<li>AdRef_ResearchProjects_ARAlgaeFarming</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+	<!-- ============ BacteriaBatterySmall ============ -->
+
+	<ThingDef ParentName="ARBuildingBase">
+		<defName>AdRef_ThingDefs_BacteriaBatterySmall</defName>
+		<label>Bacteria Battery (Small)</label>
+		<description>Produces electricity through a GE "Metal-breathing” (Geobacter) bacteria, they have sufficient nutrition to last a couple of decades.</description>
+		<designationCategory>Power</designationCategory>
+		<size>(1,1)</size>
+		<graphicData>
+			<texPath>BacteriaBatterySmall</texPath>
+			<drawSize>(1,1)</drawSize>
+		</graphicData>
+		<statBases>
+			<WorkToMake>1000</WorkToMake>
+		</statBases>
+		<costList>
+			<Steel>25</Steel>
+			<Component>2</Component>
+			<AdRef_ThingDef_ElectrodrinkRaw>25</AdRef_ThingDef_ElectrodrinkRaw>
+			<AdRef_ThingDef_AlgaeKryllRaw>50</AdRef_ThingDef_AlgaeKryllRaw>
+		</costList>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<transmitsPower>true</transmitsPower>
+				<basePowerConsumption>-125</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Breakdownable"/>
+			<li Class="CompProperties_HeatPusher">
+				<heatPerSecond>7</heatPerSecond>
+			</li>
+		</comps>
+		<researchPrerequisites>
+			<li>AdRef_ResearchProjects_ARBioBatteries</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+	<!-- ============ BacteriaBatteryLarge ============ -->
+
+	<ThingDef ParentName="ARBuildingBase">
+		<defName>AdRef_ThingDefs_BacteriaBatteryLarge</defName>
+		<label>Bacteria Battery (Large)</label>
+		<description>A larger version of the small bacteria battery. Has better power output, a work surface on top, and an extraction port to fill hand-held batteries...</description>
+		<designationCategory>Power</designationCategory>
+		<size>(3,1)</size>
+		<graphicData>
+			<texPath>BacteriaBatteryLarge</texPath>
+			<drawSize>(3,1)</drawSize>
+		</graphicData>
+		<statBases>
+			<WorkToMake>3000</WorkToMake>
+		</statBases>
+		<costList>
+			<Steel>100</Steel>
+			<Component>5</Component>
+			<AdRef_ThingDef_ElectrodrinkRaw>100</AdRef_ThingDef_ElectrodrinkRaw>
+			<AdRef_ThingDef_AlgaeKryllRaw>200</AdRef_ThingDef_AlgaeKryllRaw>
+		</costList>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<transmitsPower>true</transmitsPower>
+				<basePowerConsumption>-400</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Breakdownable"/>
+			<li Class="CompProperties_HeatPusher">
+				<heatPerSecond>15</heatPerSecond>
+			</li>
+			<li Class="CompProperties_AffectedByFacilities">
+				<linkableFacilities>
+				  <li>ToolCabinet</li>
+				</linkableFacilities>
+			</li>
+		</comps>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
+		<building>
+			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+		</building>
+		<recipes>
+			<li>AdRef_RecipeDefs_CraftGun_ChargePistol</li>
+			<li>AdRef_RecipeDefs_CraftGun_ChargeSniper</li>
+			<li>AdRef_RecipeDefs_CraftGun_ChargeAssault_a</li>
+			<li>AdRef_RecipeDefs_CraftGun_ChargeAssault_b</li>
+			<li>AdRef_RecipeDefs_CraftGun_ChargeAssault_c</li>
+		</recipes>
+		<researchPrerequisites>
+			<li>AdRef_ResearchProjects_ARBioBatteries</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+	<!-- ============ MealSynthesizer ============ -->
+
+	<ThingDef ParentName="ARBuildingBase">
+		<defName>AdRef_ThingDefs_MealSynthesizer</defName>
+		<label>Meal Synthesizer</label>
+		<description>A device that synthesizes meals from Electrolyte Solution and Algae-Kryll Goo\n\nReclaims some steel too</description>
+		<size>(1,1)</size>
+		<graphicData>
+			<texPath>MealSynthesizer</texPath>
+			<drawSize>(1,1)</drawSize>
+		</graphicData>
+		<statBases>
+			<WorkToMake>1000</WorkToMake>
+		</statBases>
+		<costList>
+			<Steel>100</Steel>
+			<Silver>10</Silver>
+			<Uranium>5</Uranium>
+			<Component>5</Component>
+		</costList>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<startElectricalFires>true</startElectricalFires>
+				<basePowerConsumption>600</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Breakdownable"/>
+			<li Class="CompProperties_HeatPusher">
+				<heatPerSecond>15</heatPerSecond>
+			</li>
+			<li Class="CompProperties_AffectedByFacilities">
+				<linkableFacilities>
+				  <li>ToolCabinet</li>
+				</linkableFacilities>
+			</li>
+		</comps>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
+		<building>
+			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+		</building>
+		<recipes>
+			<li>AdRef_RecipeDefs_PrepareSynthMeal</li>
+		</recipes>
+		<researchPrerequisites>
+			<li>AdRef_ResearchProjects_ARBioBatteries</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+	<!-- ============ BackAlleyWorkshop ============ -->
+
+	<ThingDef ParentName="ARBuildingBase">
+		<defName>AdRef_ThingDefs_BackAlleyWorkshop</defName>
+		<label>Back Alley Armoury</label>
+		<description>A copy of a back alley armoury, with the dirt, the grime and I suspect.. some illegal organs crates too</description>
+		<size>(2,1)</size>
+		<graphicData>
+			<texPath>BackAlleyWorkshop</texPath>
+			<drawSize>(2,1)</drawSize>
+		</graphicData>
+		<costList>
+			<Steel>150</Steel>
+			<Silver>20</Silver>
+			<Gold>15</Gold>
+			<Component>2</Component>
+		</costList>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<startElectricalFires>true</startElectricalFires>
+				<basePowerConsumption>200</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Breakdownable"/>
+			<li Class="CompProperties_AffectedByFacilities">
+				<linkableFacilities>
+				  <li>ToolCabinet</li>
+				</linkableFacilities>
+			 </li>
+		</comps>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
+		<building>
+			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+			<unpoweredWorkTableWorkSpeedFactor>0.4</unpoweredWorkTableWorkSpeedFactor>
+		</building>
+		<recipes>
+			<li>AdRef_RecipeDefs_Craft_Steel_Slag</li>
+			<li>AdRef_RecipeDefs_CraftArmor_Slag_Vest_Crude</li>
+			<li>AdRef_RecipeDefs_CraftArmor_Slag_Vest_Improved</li>
+			<li>AdRef_RecipeDefs_CraftArmor_Slag_Plate_Crude</li>
+			<li>AdRef_RecipeDefs_CraftArmor_Slag_Plate_Improved</li>
+			<li>AdRef_RecipeDefs_CraftArmor_Slag_Helm_Crude</li>
+			<li>AdRef_RecipeDefs_CraftArmor_Slag_Helm_Improved</li>
+		</recipes>
+		<researchPrerequisites>
+			<li>AdRef_ResearchProjects_AROurRimworld</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+</Defs>

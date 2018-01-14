@@ -1,0 +1,326 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- ============ ApparelBase ============ -->
+
+	<ThingDef Name="ApparelBase" Abstract="True">
+		<thingClass>Apparel</thingClass>
+		<category>Item</category>
+		<selectable>True</selectable>
+		<pathCost>10</pathCost>
+		<useHitPoints>True</useHitPoints>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<DeteriorationRate>2</DeteriorationRate>
+			<Beauty>-4</Beauty>
+			<SellPriceFactor>0.70</SellPriceFactor>
+			<Mass>4</Mass>
+		</statBases>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
+		</graphicData>
+		<altitudeLayer>Item</altitudeLayer>
+		<drawGUIOverlay>true</drawGUIOverlay>
+		<alwaysHaulable>True</alwaysHaulable>
+		<tickerType>Never</tickerType>
+		<thingCategories>
+			<li>Apparel</li>
+		</thingCategories>
+		<comps>
+			<li Class="CompProperties_Forbiddable"/>
+			<li>
+				<compClass>CompColorable</compClass>
+			</li>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+		</comps>
+		<recipeMaker>
+			<workSpeedStat>TailoringSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Tailor</effectWorking>
+			<soundWorking>Recipe_Machining</soundWorking>
+			<unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+		</recipeMaker>
+	</ThingDef>
+
+	<!-- ============ Slag_Vest_Crude ============ -->
+
+	<ThingDef ParentName="ApparelBase">
+		<defName>AdRef_Apparel_Slag_Vest_Crude</defName>
+		<label>Crude Slag Vest</label>
+		<description>Constructed of recycled slag, this vest is encumbering but effective against bludgeoning. The gaps in the plates render it almost useless against animals, bullets, or fire. It's made of metal, so don't get electrocuted while wearing this.</description>
+		<costList>
+			<ChunkSlagSteel>1</ChunkSlagSteel>
+		</costList>
+		<graphicData>
+			<texPath>Vest_Crude/Vest_Crude</texPath>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<MarketValue>30</MarketValue>
+			<ArmorRating_Blunt>0.65</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.15</ArmorRating_Sharp>
+			<ArmorRating_Heat>0.05</ArmorRating_Heat>
+			<ArmorRating_Electric>-0.30</ArmorRating_Electric>
+			<Insulation_Cold>-5</Insulation_Cold>
+			<Insulation_Heat>-5</Insulation_Heat>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.20</MoveSpeed>
+		</equippedStatOffsets>
+		<generateCommonality>0</generateCommonality>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Vest_Crude/Vest_Crude</wornGraphicPath>
+			<layers>
+				<li>Middle</li>
+			</layers>
+			<tags>
+				<li>CraftedArmor</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+
+	<!-- ============ Slag_Vest_Improved ============ -->
+
+	<ThingDef ParentName="ApparelBase">
+		<defName>AdRef_Apparel_Slag_Vest_Improved</defName>
+		<label>Improved Slag Vest</label>
+		<description>An improvement of the crude slag vest, this armour has been adapted to the frame of the user, and has had its looks upgraded with a hand of paint. Watch out for fire and electricity.</description>
+		<costList>
+			<ChunkSlagSteel>1</ChunkSlagSteel>
+		</costList>
+		<graphicData>
+			<texPath>Vest_Improved/Vest_Improved</texPath>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>180</MaxHitPoints>
+			<MarketValue>70</MarketValue>
+			<ArmorRating_Blunt>0.40</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.40</ArmorRating_Sharp>
+			<ArmorRating_Heat>0.10</ArmorRating_Heat>
+			<ArmorRating_Electric>-0.15</ArmorRating_Electric>
+			<Insulation_Cold>-10</Insulation_Cold>
+			<Insulation_Heat>-10</Insulation_Heat>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.15</MoveSpeed>
+		</equippedStatOffsets>
+		<generateCommonality>0</generateCommonality>
+		<apparel>
+			<wornGraphicPath>Vest_Improved/Vest_Improved</wornGraphicPath>
+			<layers>
+				<li>Middle</li>
+			</layers>
+			<tags>
+				<li>CraftedArmor</li>
+			</tags>
+			<bodyPartGroups>
+				<li>Torso</li>
+			</bodyPartGroups>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<weight>10</weight>
+					<min>RGBA(0.5,0.5,0.5,1)</min>
+					<max>RGBA(1,1,1,1)</max>
+				</li>
+			</options>
+		</colorGenerator>
+	</ThingDef>
+
+	<!-- ============ Slag_Plate_Crude ============ -->
+
+	<ThingDef ParentName="ApparelBase">
+		<defName>AdRef_Apparel_Slag_Plate_Crude</defName>
+		<label>Crude Slag Plate Armour</label>
+		<description>Constructed of recycled slag, this plate armour is encumbering but effective against bludgeoning. The gaps in the plates render it almost useless against animals, bullets, or fire. It's made of metal, so don't get electrocuted while wearing this.</description>
+		<costList>
+			<ChunkSlagSteel>1</ChunkSlagSteel>
+		</costList>
+		<graphicData>
+			<texPath>Plate_Crude/Plate_Crude</texPath>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>180</MaxHitPoints>
+			<MarketValue>70</MarketValue>
+			<ArmorRating_Blunt>0.65</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.15</ArmorRating_Sharp>
+			<ArmorRating_Heat>0.05</ArmorRating_Heat>
+			<ArmorRating_Electric>-0.30</ArmorRating_Electric>
+			<Insulation_Cold>-15</Insulation_Cold>
+			<Insulation_Heat>-15</Insulation_Heat>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.20</MoveSpeed>
+		</equippedStatOffsets>
+		<generateCommonality>0</generateCommonality>
+		<apparel>
+			<wornGraphicPath>Plate_Crude/Plate_Crude</wornGraphicPath>
+			<layers>
+				<li>Middle</li>
+				<li>Shell</li>
+			</layers>
+			<tags>
+				<li>CraftedArmor</li>
+			</tags>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+		</apparel>
+	</ThingDef>
+
+	<!-- ============ Slag_Plate_Improved ============ -->
+
+	<ThingDef ParentName="ApparelBase">
+		<defName>AdRef_Apparel_Slag_Plate_Improved</defName>
+		<label>Improved Slag Plate Armour</label>
+		<description>An improvement of the crude slag plate armour, it's very effective in gunfights. Flexible joints allow reduced encumbrance. Spikes and paint increase the wearer's badassitude by a factor of +2!</description>
+		<costList>
+			<ChunkSlagSteel>1</ChunkSlagSteel>
+		</costList>
+		<graphicData>
+			<texPath>Plate_Improved/Plate_Improved</texPath>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<MarketValue>110</MarketValue>
+			<ArmorRating_Blunt>0.40</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.40</ArmorRating_Sharp>
+			<ArmorRating_Heat>0.10</ArmorRating_Heat>
+			<ArmorRating_Electric>-0.15</ArmorRating_Electric>
+			<Insulation_Cold>-10</Insulation_Cold>
+			<Insulation_Heat>-10</Insulation_Heat>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.15</MoveSpeed>
+		</equippedStatOffsets>
+		<generateCommonality>0</generateCommonality>
+		<apparel>
+			<wornGraphicPath>Plate_Improved/Plate_Improved</wornGraphicPath>
+			<layers>
+				<li>Middle</li>
+				<li>Shell</li>
+			</layers>
+			<tags>
+				<li>CraftedArmor</li>
+			</tags>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<weight>15</weight>
+					<min>RGBA(0.5,0.5,0.5,1)</min>
+					<max>RGBA(1,1,1,1)</max>
+				</li>
+			</options>
+		</colorGenerator>
+	</ThingDef>
+
+	<!-- ============ Slag_Helm_Crude ============ -->
+
+	<ThingDef ParentName="ApparelBase">
+		<defName>AdRef_Apparel_Slag_Helm_Crude</defName>
+		<label>Crude Slag Helmet</label>
+		<description>A crude helmet shaped from recycled slag. It's effective, but neck cramps are guaranteed due to its weight. The thick plate offer a good protection against gunshots, just avoid melee since you can't see anything.</description>
+		<costList>
+			<ChunkSlagSteel>1</ChunkSlagSteel>
+		</costList>
+		<graphicData>
+			<texPath>Helm/Helm_Crude</texPath>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>80</MaxHitPoints>
+			<MarketValue>80</MarketValue>
+			<ArmorRating_Blunt>0.80</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.80</ArmorRating_Sharp>
+			<ArmorRating_Heat>0.50</ArmorRating_Heat>
+			<ArmorRating_Electric>-0.15</ArmorRating_Electric>
+			<Insulation_Cold>-5</Insulation_Cold>
+			<Insulation_Heat>-5</Insulation_Heat>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.15</MoveSpeed>
+		</equippedStatOffsets>
+		<generateCommonality>0</generateCommonality>
+		<apparel>
+			<wornGraphicPath>Helm/Helm_Crude</wornGraphicPath>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>CraftedHelmet</li>
+			</tags>
+			<bodyPartGroups>
+				<li>UpperHead</li>
+			</bodyPartGroups>
+		</apparel>
+	</ThingDef>
+
+	<!-- ============ Slag_Helm_Improved ============ -->
+
+	<ThingDef ParentName="ApparelBase">
+		<defName>AdRef_Apparel_Slag_Helm_Improved</defName>
+		<label>Improved Slag Helmet</label>
+		<description>An improvement of the crude slag helmet. It has a skull painted on it! Guaranteed to make the wearer feel like an Army of Two.</description>
+		<costList>
+			<ChunkSlagSteel>1</ChunkSlagSteel>
+		</costList>
+		<graphicData>
+			<texPath>Helm/Helm_Improved</texPath>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>80</MaxHitPoints>
+			<MarketValue>80</MarketValue>
+			<ArmorRating_Blunt>0.80</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.80</ArmorRating_Sharp>
+			<ArmorRating_Heat>0.50</ArmorRating_Heat>
+			<ArmorRating_Electric>-0.05</ArmorRating_Electric>
+			<Insulation_Cold>-10</Insulation_Cold>
+			<Insulation_Heat>-10</Insulation_Heat>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.10</MoveSpeed>
+		</equippedStatOffsets>
+		<generateCommonality>0</generateCommonality>
+		<apparel>
+			<wornGraphicPath>Helm/Helm_Improved</wornGraphicPath>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>CraftedHelmet</li>
+			</tags>
+			<bodyPartGroups>
+				<li>UpperHead</li>
+			</bodyPartGroups>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<weight>4</weight>
+					<max>RGBA(1,1,1,1)</max>
+					<min>RGBA(0.3,0.3,0.3,1)</min>
+				</li>
+			</options>
+		</colorGenerator>
+	</ThingDef>
+
+</Defs>

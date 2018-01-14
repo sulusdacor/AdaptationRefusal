@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- ============ ARRecipeWeaponBase ============ -->
+
+	<RecipeDef Abstract="True" Name="AdRef_RecipeWeaponBase">
+		<label>Easter Egg</label>
+		<description>You found a bug! Please report it.</description>
+		<effectWorking>Smelt</effectWorking>
+		<soundWorking>Recipe_Smelt</soundWorking>
+		<workSpeedStat>SmithingSpeed</workSpeedStat>
+		<workSkill>Crafting</workSkill>
+	</RecipeDef>
+
+	<!-- ============ CraftGun_ChargePistol ============ -->
+
+	<RecipeDef ParentName="AdRef_RecipeWeaponBase">
+		<defName>AdRef_RecipeDefs_CraftGun_ChargePistol</defName>
+		<label>upgrade pistol</label>
+		<description>Convert a basic pistol to an energy weapon (Needs: 15 Steel, 5 Component).</description>
+		<jobString>Upgrading pistol</jobString>
+		<workAmount>1200</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>15</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Component</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Gun_Autopistol</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Steel</li>
+				<li>Component</li>
+				<li>Gun_Autopistol</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<AdRef_Gun_ChargePistol>1</AdRef_Gun_ChargePistol>
+		</products>
+		<skillRequirements>
+			<Crafting>4</Crafting>
+		</skillRequirements>
+	</RecipeDef>
+
+	<!-- ============ CraftGun_ChargeSniper ============ -->
+
+	<RecipeDef ParentName="AdRef_RecipeWeaponBase">
+		<defName>AdRef_RecipeDefs_CraftGun_ChargeSniper</defName>
+		<label>upgrade bolt-action rifle</label>
+		<description>Convert a bolt-action rifle to an energy weapon (Needs: 25 Steel, 5 Component).</description>
+		<jobString>Upgrading bolt-action rifle</jobString>
+		<workAmount>1800</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Gun_BoltActionRifle</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Component</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>25</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Steel</li>
+				<li>Component</li>
+				<li>Gun_BoltActionRifle</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<AdRef_Gun_ChargeSniper>1</AdRef_Gun_ChargeSniper>
+		</products>
+		<skillRequirements>
+			<Crafting>5</Crafting>
+		</skillRequirements>
+	</RecipeDef>
+
+	<!-- ============ CraftGun_ChargeAssault_a ============ -->
+
+	<RecipeDef ParentName="AdRef_RecipeWeaponBase">
+		<defName>AdRef_RecipeDefs_CraftGun_ChargeAssault_a</defName>
+		<label>upgrade assault rifle</label>
+		<description>Convert an assault rifle into an energy weapon (Needs: 25 Steel, 5 Component).</description>
+		<jobString>Upgrading assault rifle</jobString>
+		<workAmount>2000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>25</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Component</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Gun_AssaultRifle</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Steel</li>
+				<li>Component</li>
+				<li>Gun_AssaultRifle</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<AdRef_Gun_ChargeAssault>1</AdRef_Gun_ChargeAssault>
+		</products>
+		<skillRequirements>
+			<Crafting>6</Crafting>
+		</skillRequirements>
+	</RecipeDef>
+
+	<!-- ============ CraftGun_ChargeAssault_b ============ -->
+
+	<RecipeDef ParentName="AdRef_RecipeWeaponBase">
+		<defName>AdRef_RecipeDefs_CraftGun_ChargeAssault_b</defName>
+		<label>Craft Charge Assault Rifle from Charge Pistol</label>
+		<description>Convert a charge pistol into a charge assault rifle (Needs: 50 Steel, 5 Component).</description>
+		<jobString>Converting charge pistol</jobString>
+		<workAmount>800</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>50</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Component</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AdRef_Gun_ChargePistol</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Steel</li>
+				<li>Component</li>
+				<li>AdRef_Gun_ChargePistol</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<AdRef_Gun_ChargeAssault>1</AdRef_Gun_ChargeAssault>
+		</products>
+		<skillRequirements>
+			<Crafting>6</Crafting>
+		</skillRequirements>
+	</RecipeDef>
+
+	<!-- ============ CraftGun_ChargeAssault_c ============ -->
+
+	<RecipeDef ParentName="AdRef_RecipeWeaponBase">
+		<defName>AdRef_RecipeDefs_CraftGun_ChargeAssault_c</defName>
+		<label>Craft Charge Assault Rifle from Charge Sniper Rifle</label>
+		<description>Convert a charge sniper rifle into a true assault weapon (Needs: 25 Steel, 5 Component).</description>
+		<jobString>Assembling charge assault rifle</jobString>
+		<workAmount>800</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>25</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Component</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AdRef_Gun_ChargeSniper</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Steel</li>
+				<li>Component</li>
+				<li>AdRef_Gun_ChargeSniper</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<AdRef_Gun_ChargeAssault>1</AdRef_Gun_ChargeAssault>
+		</products>
+		<skillRequirements>
+			<Crafting>6</Crafting>
+		</skillRequirements>
+	</RecipeDef>
+
+<!-- Recipe updated to A13 and dummied out - copying weapons seems overpowered right now -->
+<!--
+	<RecipeDef ParentName="ARRecipeWeaponBase">
+		<defName>CraftGun_Copy_ChargePistol</defName>
+		<label>Duplicate Charge Pistol</label>
+		<description>Craft a copy of a charge pistol (Needs: 45 Steel, 10 Silver).</description>
+		<jobString>Assembling Charge pistol</jobString>
+		<workAmount>800</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>35</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Silver</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Gun_ChargePistol</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Steel</li>
+				<li>Silver</li>
+				<li>Gun_ChargePistol</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Gun_ChargePistol>2</Gun_ChargePistol>
+		</products>
+		<skillRequirements>
+			<li>
+				<skill>Crafting</skill>
+				<minLevel>6</minLevel>
+			</li>
+		</skillRequirements>
+	</RecipeDef>
+
+	<RecipeDef ParentName="ARRecipeWeaponBase">
+		<defName>CraftGun_Copy_ChargeSniper</defName>
+		<label>Duplicate Charge Sniper Rifle</label>
+		<description>Craft a copy of a charge sniper rifle (Needs: 90 Steel, 10 Silver, 10 Wood).</description>
+		<jobString>Assembling Charge pistol</jobString>
+		<workAmount>1200</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>90</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Silver</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>WoodLog</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Gun_ChargeSniper</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Steel</li>
+				<li>Silver</li>
+				<li>WoodLog</li>
+				<li>Gun_ChargeSniper</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Gun_ChargeSniper>2</Gun_ChargeSniper>
+		</products>
+		<skillRequirements>
+			<li>
+				<skill>Crafting</skill>
+				<minLevel>8</minLevel>
+			</li>
+		</skillRequirements>
+	</RecipeDef>
+-->
+
+</Defs>

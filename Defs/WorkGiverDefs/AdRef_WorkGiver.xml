@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<WorkGiverDef>
+		<defName>AdRef_WorkGiverDefs_DoBillsElectro</defName>
+		<giverClass>WorkGiver_DoBill</giverClass>
+		<workType>Crafting</workType>
+		<priorityInType>100</priorityInType>
+		<fixedBillGiverDefs>
+			<li>AdRef_ThingDefs_Moistureconverter</li>
+		</fixedBillGiverDefs>
+		<verb>collect</verb>
+		<gerund>collecting</gerund>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+	</WorkGiverDef>
+
+	<WorkGiverDef>
+		<defName>AdRef_WorkGiverDefs_DoBillsKryll</defName>
+		<giverClass>WorkGiver_DoBill</giverClass>
+		<workType>Crafting</workType>
+		<priorityInType>100</priorityInType>
+		<fixedBillGiverDefs>
+			<li>AdRef_ThingDefs_AlgaeKryllFarm</li>
+		</fixedBillGiverDefs>
+		<verb>can</verb>
+		<gerund>canning</gerund>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+	</WorkGiverDef>
+
+	<WorkGiverDef>
+		<defName>AdRef_WorkGiverDefs_DoBillsBacteriaBatterySmall</defName>
+		<label>craft at AR.small battery</label>
+		<giverClass>WorkGiver_DoBill</giverClass>
+		<workType>Crafting</workType>
+		<priorityInType>75</priorityInType>
+		<fixedBillGiverDefs>
+			<li>AdRef_ThingDefs_BacteriaBatterySmall</li>
+		</fixedBillGiverDefs>
+		<verb>craft</verb>
+		<gerund>crafting</gerund>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+	</WorkGiverDef>
+
+	<WorkGiverDef>
+		<defName>AdRef_WorkGiverDefs_DoBillsBacteriaBatteryLarge</defName>
+		<giverClass>WorkGiver_DoBill</giverClass>
+		<workType>Crafting</workType>
+		<priorityInType>75</priorityInType>
+		<fixedBillGiverDefs>
+			<li>AdRef_ThingDefs_BacteriaBatteryLarge</li>
+		</fixedBillGiverDefs>
+		<verb>craft</verb>
+		<gerund>crafting</gerund>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+	</WorkGiverDef>
+
+	<WorkGiverDef>
+		<defName>AdRef_WorkGiverDefs_DoBillsSynthMeal</defName>
+		<giverClass>WorkGiver_DoBill</giverClass>
+		<workType>Crafting</workType>
+		<priorityInType>100</priorityInType>
+		<fixedBillGiverDefs>
+			<li>AdRef_ThingDefs_MealSynthesizer</li>
+		</fixedBillGiverDefs>
+		<verb>prepare</verb>
+		<gerund>synthesizing</gerund>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+	</WorkGiverDef>
+
+	<WorkGiverDef>
+		<defName>AdRef_WorkGiverDefs_DoBillsBackalley</defName>
+		<label>craft at AR.backalley</label>
+		<giverClass>WorkGiver_DoBill</giverClass>
+		<workType>Crafting</workType>
+		<priorityInType>75</priorityInType>
+		<fixedBillGiverDefs>
+			<li>AdRef_ThingDefs_BackAlleyWorkshop</li>
+		</fixedBillGiverDefs>
+		<verb>craft</verb>
+		<gerund>assembling</gerund>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+	</WorkGiverDef>
+
+</Defs>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ResearchProjectDef>
+		<defName>AdRef_ResearchProjects_ARAdaptationRefusal</defName>
+		<label>AR - Adaptation Refusal</label>
+		<description>While most survivors of a crash try to adapt and coexist to the environment of the planet\nthey are on, your colonist utterly refuse to do so. With this research, colonists will be\nable to build a moisture converter to prepare synthesized energy drinks and bottle them\nin small canisters.\n\nUnlocks Building:\nMoisture Converter\n\nUnlocks food:\nElectrolytic Solution</description>
+		<baseCost>1000</baseCost>
+		<prerequisites>
+			<li>Hydroponics</li>
+		</prerequisites>
+		<techLevel>Industrial</techLevel>
+		<tab>AdRef_ResearchtabAdRef</tab>
+		<researchViewX>0</researchViewX>
+		<researchViewY>1.5</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>AdRef_ResearchProjects_ARAlgaeFarming</defName>
+		<label>AR - Algae-Kryll farming</label>
+		<description>The colonists have noticed that even if synthetized energy drinks can sustain an individual\nfor some time, real food really is necessary. By adapting an abandoned Explorator-Korps technology they can build small bio-matter farms where Algae-Kryll (a modified krill)\ncan be grown and collected.\n\nUnlocks Building:\nAlgae-Kryll farms\n\nUnlocks food:\nAlgae-Kryll Goo</description>
+		<baseCost>1000</baseCost>
+		<prerequisites>
+			<li>AdRef_ResearchProjects_ARAdaptationRefusal</li>
+			<li>MicroelectronicsBasics</li>
+		</prerequisites>
+		<techLevel>Industrial</techLevel>
+		<tab>AdRef_ResearchtabAdRef</tab>
+		<researchViewX>1</researchViewX>
+		<researchViewY>1.5</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>AdRef_ResearchProjects_ARBioBatteries</defName>
+		<label>AR - Power Bacteria</label>
+		<description>After gaining experience with the genetically modified Algae-Kryll, your colonists desire\nto push DNA tampering one step further. They will create an inedible bacteria strain that\ncan produce small quantities of electricity. Using a waterproof battery as a base structure\nand a good quantity of mineral-proteic compound they should be able to build a battery that will work for years.\n\nOne of you also suspects that it might be possible to use a small version of the bacteria battery to upgrade those crappy weapons you found in the escape pods.\n\nUnlocks Building:\nBacteria Battery\n\nUnlock Weapon Upgrading:\nPistols and Survival Rifles can be upgraded at the Large Bacteria Battery</description>
+		<baseCost>2000</baseCost>
+		<prerequisites>
+			<li>AdRef_ResearchProjects_ARAlgaeFarming</li>
+		</prerequisites>
+		<techLevel>Spacer</techLevel>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<tab>AdRef_ResearchtabAdRef</tab>
+		<researchViewX>2</researchViewX>
+		<researchViewY>1.5</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>AdRef_ResearchProjects_AROurRimworld</defName>
+		<label>AR - OUR Rimworld</label>
+		<description>Experience with bacteria batteries and energy weapons has led to unexpected results. "According to SCIENCE!" your colonists think they should be able to craft guns or even\ndesign new, advanced technologies. Afterall, in the dark alleys of the pirate merchant\nhomeworlds, "Back alley Workshops" are pretty common. On a Rimworld, it's legal too.\n\nUnlocks Building:\nBack Alley Workshop\n\nUnlock Weapon Crafting:\nProduces cheap and effective weapons\nHandcraft Advanced ones\n\nUnlock Armour Crafting:\nUnlocks recycling slag chunks into crude heavy armour</description>
+		<baseCost>6000</baseCost>
+		<prerequisites>
+			<li>AdRef_ResearchProjects_ARBioBatteries</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<techLevel>Spacer</techLevel>
+		<tab>AdRef_ResearchtabAdRef</tab>
+		<researchViewX>3</researchViewX>
+		<researchViewY>1.5</researchViewY>
+	</ResearchProjectDef>
+
+</Defs>

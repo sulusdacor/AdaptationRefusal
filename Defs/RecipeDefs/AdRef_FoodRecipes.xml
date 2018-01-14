@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- ============ PrepareElectrodrinkRaw ============ -->
+
+	<RecipeDef>
+		<defName>AdRef_RecipeDefs_PrepareElectrodrinkRaw</defName>
+		<label>Prepare Electrodrink</label>
+		<description>prepare a canister of electrolytes solution with minerals and moisture.(makes 10 drinks)</description>
+		<jobString>Collecting Moisture</jobString>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<workAmount>1200</workAmount>
+		<workSpeedStat>SmithingSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_Brewing</soundWorking>
+		<workSkill>Crafting</workSkill>
+		<targetCountAdjustment>1</targetCountAdjustment>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Steel</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<AdRef_ThingDef_ElectrodrinkRaw>10</AdRef_ThingDef_ElectrodrinkRaw>
+		</products>
+		<skillRequirements>
+			<Crafting>4</Crafting>
+		</skillRequirements>
+	</RecipeDef>
+
+	<!-- ============ PrepareAlgaeKryllRaw ============ -->
+
+	<RecipeDef>
+		<defName>AdRef_RecipeDefs_PrepareAlgaeKryllRaw</defName>
+		<label>Can Algae-Kryll pallets</label>
+		<description>Prepare a portion of protein-rich pallets.(makes 5 algae raw)</description>
+		<jobString>Preparing kryll.</jobString>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<workAmount>3000</workAmount>
+		<workSpeedStat>SmithingSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_Brewing</soundWorking>
+		<workSkill>Crafting</workSkill>
+		<targetCountAdjustment>1</targetCountAdjustment>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Steel</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<AdRef_ThingDef_AlgaeKryllRaw>5</AdRef_ThingDef_AlgaeKryllRaw>
+		</products>
+		<skillRequirements>
+			<Crafting>4</Crafting>
+		</skillRequirements>
+	</RecipeDef>
+
+	<!-- ============ PrepareSynthMeal ============ -->
+
+	<RecipeDef>
+		<defName>AdRef_RecipeDefs_PrepareSynthMeal</defName>
+		<label>create synth meal</label>
+		<description>Synthesizes Algae-Kryll Goo and Electrolyte Solution into a reasonably edible meal. Not recommended for prolonged consumption.(makes 10 meals)</description>
+		<jobString>Creating synth meal.</jobString>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<workAmount>1200</workAmount>
+		<workSpeedStat>SmithingSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<workSkill>Crafting</workSkill>
+		<targetCountAdjustment>1</targetCountAdjustment>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AdRef_ThingDef_ElectrodrinkRaw</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AdRef_ThingDef_AlgaeKryllRaw</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AdRef_ThingDef_ElectrodrinkRaw</li>
+				<li>AdRef_ThingDef_AlgaeKryllRaw</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<AdRef_ThingDef_SynthMeal>10</AdRef_ThingDef_SynthMeal>
+		</products>
+		<skillRequirements>
+			<Crafting>4</Crafting>
+		</skillRequirements>
+	</RecipeDef>
+
+</Defs>

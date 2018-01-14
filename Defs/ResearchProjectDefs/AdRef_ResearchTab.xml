@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<ResearchTabDef>
+		<defName>AdRef_ResearchtabAdRef</defName>
+		<label>Adaptation Refusal</label>
+	</ResearchTabDef>
+
+</Defs>

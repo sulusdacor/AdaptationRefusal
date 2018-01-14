@@ -1,0 +1,58 @@
+personal changelog for mod "Adaptation Refusal"
+
+- 10/06/2017
+
+	- update to a17
+	- updated xml stuff that changed in a17, added mass of 4 to all stuff
+	- file structure+defnames, all with AdRef_ at the start to avoid defname conflicts with other mods/core
+	- warmupticker to time, just took vanilla value for the normal weapon counter parts. did not change the time there.
+	- added research tab
+
+- 30/12/2017
+
+	- update to b18
+	- fixed roots <Defs>
+	- fixed recipe skillreq syntax
+	- fixed case sensitive xml tags
+
+- 01/01/2018
+
+	- added 1%black bg to all textures
+	- added 1pix black contur to some textures (all weapons, electrolyte drink, raw algae meal, some workbenches, that seemed strange)
+	- removed grey pixel at edge of some textures black outside border (weapons/workbenches)
+	- adjusted research cost: (spacer usally gets a 200% cost multiplier)
+		AR 		900 -> 1000 (industrial)
+		Algae 		5000 -> 1000 (industrial)
+		Power 		10 000 -> 2000 (spacer)
+		our Rimworld 	30 000 -> 6000 (spacer)
+			--->goal was to make stuff not as much endgame as it was before
+	- adjusted recipe costs: (mostly replaced silver for components 10 ->5)
+		make charge pistol: 15 steel 10 silver + autopistol -> 15 steel, 5 components, autopistol
+		charge sniper: 25 steel, 10silver, weapon -> 25 steel, 5 components, weapon
+		charge assault: see above 10 silver -> 5 components
+		conversion recipes weapons: 10 silver -> 5 components
+	- improved slag armor recipes added steel and components as cost:
+		helm: 5 steel 1 comp
+		vest: 5 steel 2 comp
+		plate: 10 steel 2 comp
+	- from slag vest(+improved) removed apparel layers xml tag shell (middle left), has now same as armor vest in vanilla
+	- slag plate armor (+improved) added body part groups neck + shoulders (same as power armor)
+		-> slag armors still have significant movement penalitys compared to vanilla equip!!!
+	- renamed some of the left defnames to AdRef_objecttype_name
+
+- 02/01/2018
+
+	- adjusted mealbase form vanilla base
+	- made synth meal drop off slower (0.24 initial severitiy, -0.2 per day). makes it easier to reach the addicted state, but harder to come down (still 5days from max 1)
+	- renamed some of the left defnames to AdRef_objecttype_name
+	- updated about file
+
+- 03/01/2018
+
+	- added recipe to make steel slag to back alley workshop (as a worst case workaround); costs 25 steel (smelting gives 10)
+	- updated forum topic link
+	- set generateCommonality> to zero on improv slag helmet
+
+- 07/01/2018
+
+	- added linkable toolcabinet form vanilla to almsot all workbench typ things added by the mod (only exception is algae farm)

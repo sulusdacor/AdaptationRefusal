@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- ============ ARRecipeArmorBase ============ -->
+
+	<RecipeDef Abstract="True" Name="ARRecipeArmorBase">
+		<label>NOT Easter Egg</label>
+		<description>You found a bug! Please report it.</description>
+		<effectWorking>Smelt</effectWorking>
+		<soundWorking>Recipe_Smelt</soundWorking>
+		<workSpeedStat>SmithingSpeed</workSpeedStat>
+		<workSkill>Crafting</workSkill>
+	</RecipeDef>
+
+	<!-- ============ CraftArmor_Slag_Vest_Crude ============ -->
+
+	<RecipeDef ParentName="ARRecipeArmorBase">
+		<defName>AdRef_RecipeDefs_CraftArmor_Slag_Vest_Crude</defName>
+		<label>Craft Crude Slag Vest</label>
+		<description>Craft a crude vest armour from a piece of slag.</description>
+		<jobString>Crafting</jobString>
+		<workAmount>500</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ChunkSlagSteel</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>ChunkSlagSteel</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<AdRef_Apparel_Slag_Vest_Crude>1</AdRef_Apparel_Slag_Vest_Crude>
+		</products>
+		<skillRequirements>
+			<Crafting>6</Crafting>
+		</skillRequirements>
+	</RecipeDef>
+
+	<!-- ============ CraftArmor_Slag_Vest_Improved ============ -->
+
+	<RecipeDef ParentName="ARRecipeArmorBase">
+		<defName>AdRef_RecipeDefs_CraftArmor_Slag_Vest_Improved</defName>
+		<label>Upgrade Crude Slag Vest</label>
+		<description>Improve a crude slag vest by painting and reshaping it.</description>
+		<jobString>Improving crude slag vest</jobString>
+		<workAmount>1000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Component</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AdRef_Apparel_Slag_Vest_Crude</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AdRef_Apparel_Slag_Vest_Crude</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<AdRef_Apparel_Slag_Vest_Improved>1</AdRef_Apparel_Slag_Vest_Improved>
+		</products>
+		<skillRequirements>
+			<Crafting>6</Crafting>
+		</skillRequirements>
+	</RecipeDef>
+
+	<!-- ============ CraftArmor_Slag_Plate_Crude ============ -->
+
+	<RecipeDef ParentName="ARRecipeArmorBase">
+		<defName>AdRef_RecipeDefs_CraftArmor_Slag_Plate_Crude</defName>
+		<label>Craft Crude Slag Plate Armour</label>
+		<description>Craft a crude plate armour from 3 pieces of slag.</description>
+		<jobString>Crafting</jobString>
+		<workAmount>500</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ChunkSlagSteel</li>
+					</thingDefs>
+				</filter>
+				<count>3</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>ChunkSlagSteel</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<AdRef_Apparel_Slag_Plate_Crude>1</AdRef_Apparel_Slag_Plate_Crude>
+		</products>
+		<skillRequirements>
+			<Crafting>8</Crafting>
+		</skillRequirements>
+	</RecipeDef>
+
+	<!-- ============ CraftArmor_Slag_Plate_Improved ============ -->
+
+	<RecipeDef ParentName="ARRecipeArmorBase">
+		<defName>AdRef_RecipeDefs_CraftArmor_Slag_Plate_Improved</defName>
+		<label>Upgrade Crude Slag Plate Armour</label>
+		<description>Improve a crude plate armour by adding studs, spikes, and paint.</description>
+		<jobString>Improving crude slag plate armour</jobString>
+		<workAmount>1500</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Component</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AdRef_Apparel_Slag_Plate_Crude</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AdRef_Apparel_Slag_Plate_Crude</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<AdRef_Apparel_Slag_Plate_Improved>1</AdRef_Apparel_Slag_Plate_Improved>
+		</products>
+		<skillRequirements>
+			<Crafting>8</Crafting>
+		</skillRequirements>
+	</RecipeDef>
+
+	<!-- ============ CraftArmor_Slag_Helm_Crude ============ -->
+
+	<RecipeDef ParentName="ARRecipeArmorBase">
+		<defName>AdRef_RecipeDefs_CraftArmor_Slag_Helm_Crude</defName>
+		<label>Craft Crude Slag Helmet</label>
+		<description>Craft a crude helmet from a piece of slag.</description>
+		<jobString>Crafting</jobString>
+		<workAmount>600</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ChunkSlagSteel</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>ChunkSlagSteel</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<AdRef_Apparel_Slag_Helm_Crude>1</AdRef_Apparel_Slag_Helm_Crude>
+		</products>
+		<skillRequirements>
+			<Crafting>2</Crafting>
+		</skillRequirements>
+	</RecipeDef>
+
+	<!-- ============ CraftArmor_Slag_Helm_Improved ============ -->
+
+	<RecipeDef ParentName="ARRecipeArmorBase">
+		<defName>AdRef_RecipeDefs_CraftArmor_Slag_Helm_Improved</defName>
+		<label>Upgrade Slag Plate Helmet</label>
+		<description>Improve a crude slag helment by paint a scary Skull on it.</description>
+		<jobString>Improving crude slag helmet</jobString>
+		<workAmount>400</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Component</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AdRef_Apparel_Slag_Helm_Crude</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AdRef_Apparel_Slag_Helm_Crude</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<AdRef_Apparel_Slag_Helm_Improved>1</AdRef_Apparel_Slag_Helm_Improved>
+		</products>
+		<skillRequirements>
+			<Crafting>2</Crafting>
+		</skillRequirements>
+	</RecipeDef>
+
+</Defs>
