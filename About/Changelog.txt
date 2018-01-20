@@ -56,3 +56,7 @@ personal changelog for mod "Adaptation Refusal"
 - 07/01/2018
 
 	- added linkable toolcabinet form vanilla to almsot all workbench typ things added by the mod (only exception is algae farm)
+
+- 20/01/2018
+
+	- added modsync
