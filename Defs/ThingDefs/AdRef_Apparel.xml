@@ -13,8 +13,8 @@
 			<MaxHitPoints>100</MaxHitPoints>
 			<Flammability>1.0</Flammability>
 			<DeteriorationRate>2</DeteriorationRate>
-			<Beauty>-4</Beauty>
-			<SellPriceFactor>0.70</SellPriceFactor>
+			<Beauty>-3</Beauty>
+			<SellPriceFactor>0.70</SellPriceFactor> <!-- ===  seems to be missing with 1.0 in apparel xmls === -->
 			<Mass>4</Mass>
 		</statBases>
 		<graphicData>
@@ -64,7 +64,7 @@
 			<ArmorRating_Blunt>0.65</ArmorRating_Blunt>
 			<ArmorRating_Sharp>0.15</ArmorRating_Sharp>
 			<ArmorRating_Heat>0.05</ArmorRating_Heat>
-			<ArmorRating_Electric>-0.30</ArmorRating_Electric>
+			<!-- === <ArmorRating_Electric>-0.30</ArmorRating_Electric> ==== -->
 			<Insulation_Cold>-5</Insulation_Cold>
 			<Insulation_Heat>-5</Insulation_Heat>
 		</statBases>
@@ -104,7 +104,7 @@
 			<ArmorRating_Blunt>0.40</ArmorRating_Blunt>
 			<ArmorRating_Sharp>0.40</ArmorRating_Sharp>
 			<ArmorRating_Heat>0.10</ArmorRating_Heat>
-			<ArmorRating_Electric>-0.15</ArmorRating_Electric>
+			<!-- ==== <ArmorRating_Electric>-0.15</ArmorRating_Electric> ==== -->
 			<Insulation_Cold>-10</Insulation_Cold>
 			<Insulation_Heat>-10</Insulation_Heat>
 		</statBases>
@@ -153,7 +153,7 @@
 			<ArmorRating_Blunt>0.65</ArmorRating_Blunt>
 			<ArmorRating_Sharp>0.15</ArmorRating_Sharp>
 			<ArmorRating_Heat>0.05</ArmorRating_Heat>
-			<ArmorRating_Electric>-0.30</ArmorRating_Electric>
+			<!-- ==== <ArmorRating_Electric>-0.30</ArmorRating_Electric> === -->
 			<Insulation_Cold>-15</Insulation_Cold>
 			<Insulation_Heat>-15</Insulation_Heat>
 		</statBases>
@@ -198,7 +198,7 @@
 			<ArmorRating_Blunt>0.40</ArmorRating_Blunt>
 			<ArmorRating_Sharp>0.40</ArmorRating_Sharp>
 			<ArmorRating_Heat>0.10</ArmorRating_Heat>
-			<ArmorRating_Electric>-0.15</ArmorRating_Electric>
+			<!-- ====== <ArmorRating_Electric>-0.15</ArmorRating_Electric> === -->
 			<Insulation_Cold>-10</Insulation_Cold>
 			<Insulation_Heat>-10</Insulation_Heat>
 		</statBases>
@@ -252,7 +252,7 @@
 			<ArmorRating_Blunt>0.80</ArmorRating_Blunt>
 			<ArmorRating_Sharp>0.80</ArmorRating_Sharp>
 			<ArmorRating_Heat>0.50</ArmorRating_Heat>
-			<ArmorRating_Electric>-0.15</ArmorRating_Electric>
+			<!-- ====== <ArmorRating_Electric>-0.15</ArmorRating_Electric> ===== -->
 			<Insulation_Cold>-5</Insulation_Cold>
 			<Insulation_Heat>-5</Insulation_Heat>
 		</statBases>
@@ -292,7 +292,7 @@
 			<ArmorRating_Blunt>0.80</ArmorRating_Blunt>
 			<ArmorRating_Sharp>0.80</ArmorRating_Sharp>
 			<ArmorRating_Heat>0.50</ArmorRating_Heat>
-			<ArmorRating_Electric>-0.05</ArmorRating_Electric>
+			<!-- ==== <ArmorRating_Electric>-0.05</ArmorRating_Electric> ===== -->
 			<Insulation_Cold>-10</Insulation_Cold>
 			<Insulation_Heat>-10</Insulation_Heat>
 		</statBases>

@@ -32,7 +32,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>Component</li>
+						<li>ComponentIndustrial</li>
 					</thingDefs>
 				</filter>
 				<count>5</count>
@@ -49,7 +49,7 @@
 		<fixedIngredientFilter>
 			<thingDefs>
 				<li>Steel</li>
-				<li>Component</li>
+				<li>ComponentIndustrial</li>
 				<li>Gun_Autopistol</li>
 			</thingDefs>
 		</fixedIngredientFilter>
@@ -81,7 +81,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>Component</li>
+						<li>ComponentIndustrial</li>
 					</thingDefs>
 				</filter>
 				<count>5</count>
@@ -98,7 +98,7 @@
 		<fixedIngredientFilter>
 			<thingDefs>
 				<li>Steel</li>
-				<li>Component</li>
+				<li>ComponentIndustrial</li>
 				<li>Gun_BoltActionRifle</li>
 			</thingDefs>
 		</fixedIngredientFilter>
@@ -130,7 +130,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>Component</li>
+						<li>ComponentIndustrial</li>
 					</thingDefs>
 				</filter>
 				<count>5</count>
@@ -147,7 +147,7 @@
 		<fixedIngredientFilter>
 			<thingDefs>
 				<li>Steel</li>
-				<li>Component</li>
+				<li>ComponentIndustrial</li>
 				<li>Gun_AssaultRifle</li>
 			</thingDefs>
 		</fixedIngredientFilter>
@@ -179,7 +179,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>Component</li>
+						<li>ComponentIndustrial</li>
 					</thingDefs>
 				</filter>
 				<count>5</count>
@@ -196,7 +196,7 @@
 		<fixedIngredientFilter>
 			<thingDefs>
 				<li>Steel</li>
-				<li>Component</li>
+				<li>ComponentIndustrial</li>
 				<li>AdRef_Gun_ChargePistol</li>
 			</thingDefs>
 		</fixedIngredientFilter>
@@ -228,7 +228,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>Component</li>
+						<li>ComponentIndustrial</li>
 					</thingDefs>
 				</filter>
 				<count>5</count>
@@ -245,7 +245,7 @@
 		<fixedIngredientFilter>
 			<thingDefs>
 				<li>Steel</li>
-				<li>Component</li>
+				<li>ComponentIndustrial</li>
 				<li>AdRef_Gun_ChargeSniper</li>
 			</thingDefs>
 		</fixedIngredientFilter>

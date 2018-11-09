@@ -5,14 +5,14 @@
 
 	<ThingDef Name="ARBuildingBase" Abstract="True">
 		<category>Building</category>
-		<soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
 		<selectable>true</selectable>
 		<drawerType>MapMeshAndRealTime</drawerType>
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
 		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
 		<constructEffect>ConstructMetal</constructEffect>
 		<repairEffect>Repair</repairEffect>
-		<filthLeaving>BuildingRubble</filthLeaving>
+		<filthLeaving>Filth_RubbleBuilding</filthLeaving>
 		<drawGUIOverlay>false</drawGUIOverlay>
 		<castEdgeShadows>true</castEdgeShadows>
 		<staticSunShadowHeight>0.20</staticSunShadowHeight>
@@ -53,12 +53,12 @@
 		<costList>
 			<Steel>75</Steel>
 			<Silver>15</Silver>
-			<Component>2</Component>
+			<ComponentIndustrial>2</ComponentIndustrial>
 		</costList>
 		<comps>
 			<li Class="CompProperties_Power">
 				<compClass>CompPowerTrader</compClass>
-				<startElectricalFires>true</startElectricalFires>
+				<shortCircuitInRain>true</shortCircuitInRain>
 				<basePowerConsumption>150</basePowerConsumption>
 			</li>
 			<li Class="CompProperties_Flickable"/>
@@ -100,12 +100,12 @@
 		<costList>
 			<Steel>100</Steel>
 			<Silver>10</Silver>
-			<Component>2</Component>
+			<ComponentIndustrial>2</ComponentIndustrial>
 		</costList>
 		<comps>
 			<li Class="CompProperties_Power">
 				<compClass>CompPowerTrader</compClass>
-				<startElectricalFires>true</startElectricalFires>
+				<shortCircuitInRain>true</shortCircuitInRain>
 				<basePowerConsumption>150</basePowerConsumption>
 			</li>
 			<li Class="CompProperties_Flickable"/>
@@ -145,7 +145,7 @@
 		</statBases>
 		<costList>
 			<Steel>25</Steel>
-			<Component>2</Component>
+			<ComponentIndustrial>2</ComponentIndustrial>
 			<AdRef_ThingDef_ElectrodrinkRaw>25</AdRef_ThingDef_ElectrodrinkRaw>
 			<AdRef_ThingDef_AlgaeKryllRaw>50</AdRef_ThingDef_AlgaeKryllRaw>
 		</costList>
@@ -182,7 +182,7 @@
 		</statBases>
 		<costList>
 			<Steel>100</Steel>
-			<Component>5</Component>
+			<ComponentIndustrial>5</ComponentIndustrial>
 			<AdRef_ThingDef_ElectrodrinkRaw>100</AdRef_ThingDef_ElectrodrinkRaw>
 			<AdRef_ThingDef_AlgaeKryllRaw>200</AdRef_ThingDef_AlgaeKryllRaw>
 		</costList>
@@ -238,12 +238,12 @@
 			<Steel>100</Steel>
 			<Silver>10</Silver>
 			<Uranium>5</Uranium>
-			<Component>5</Component>
+			<ComponentIndustrial>5</ComponentIndustrial>
 		</costList>
 		<comps>
 			<li Class="CompProperties_Power">
 				<compClass>CompPowerTrader</compClass>
-				<startElectricalFires>true</startElectricalFires>
+				<shortCircuitInRain>true</shortCircuitInRain>
 				<basePowerConsumption>600</basePowerConsumption>
 			</li>
 			<li Class="CompProperties_Flickable"/>
@@ -286,12 +286,12 @@
 			<Steel>150</Steel>
 			<Silver>20</Silver>
 			<Gold>15</Gold>
-			<Component>2</Component>
+			<ComponentIndustrial>2</ComponentIndustrial>
 		</costList>
 		<comps>
 			<li Class="CompProperties_Power">
 				<compClass>CompPowerTrader</compClass>
-				<startElectricalFires>true</startElectricalFires>
+				<shortCircuitInRain>true</shortCircuitInRain>
 				<basePowerConsumption>200</basePowerConsumption>
 			</li>
 			<li Class="CompProperties_Flickable"/>

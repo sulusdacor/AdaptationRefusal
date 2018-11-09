@@ -41,7 +41,7 @@
 				<compClass>CompQuality</compClass>
 			</li>
 			<li Class="CompProperties_Art">
-				<nameMaker>ArtName_WeaponGun</nameMaker>
+				<nameMaker>NamerArtWeaponGun</nameMaker>
 				<descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
 				<minQualityForArtistic>Excellent</minQualityForArtistic>
 			</li>
@@ -78,8 +78,9 @@
 			<texPath>Gun_ChargePistol</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-		<soundInteract>InteractAutopistol</soundInteract>
+		<soundInteract>Interact_Autopistol</soundInteract>
 		<statBases>
+			<Mass>1.5</Mass>
 			<MarketValue>550</MarketValue>
 			<AccuracyTouch>0.95</AccuracyTouch>
 			<AccuracyShort>0.79</AccuracyShort>
@@ -94,7 +95,7 @@
 				<defaultProjectile>AdRef_Bullet_ChargePistol</defaultProjectile>
 				<warmupTime>0.3</warmupTime>
 				<range>26</range>
-				<soundCast>ShotChargeRifle</soundCast>
+				<soundCast>Shot_ChargeRifle</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
 				<muzzleFlashScale>9</muzzleFlashScale>
 			</li>
@@ -124,8 +125,9 @@
 			<texPath>Gun_ChargeSniper</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-		<soundInteract>InteractRifle</soundInteract>
+		<soundInteract>Interact_Rifle</soundInteract>
 		<statBases>
+			<Mass>4</Mass>
 			<MarketValue>1000</MarketValue>
 			<AccuracyTouch>0.60</AccuracyTouch>
 			<AccuracyShort>0.88</AccuracyShort>
@@ -140,7 +142,7 @@
 				<defaultProjectile>AdRef_BulletChargeSniper</defaultProjectile>
 				<warmupTime>4.0</warmupTime>
 				<range>42</range>
-				<soundCast>ShotChargeRifle</soundCast>
+				<soundCast>Shot_ChargeRifle</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
 				<muzzleFlashScale>9</muzzleFlashScale>
 			</li>
@@ -170,8 +172,9 @@
 			<texPath>Gun_ChargeAssault</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-		<soundInteract>InteractRifle</soundInteract>
+		<soundInteract>Interact_Rifle</soundInteract>
 		<statBases>
+			<Mass>3.5</Mass>
 			<MarketValue>1300</MarketValue>
 			<AccuracyTouch>0.96</AccuracyTouch>
 			<AccuracyShort>0.88</AccuracyShort>
@@ -188,7 +191,7 @@
 				<range>28</range>
 				<burstShotCount>2</burstShotCount>
 				<ticksBetweenBurstShots>7</ticksBetweenBurstShots>
-				<soundCast>ShotChargeRifle</soundCast>
+				<soundCast>Shot_ChargeRifle</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
 				<muzzleFlashScale>9</muzzleFlashScale>
 			</li>

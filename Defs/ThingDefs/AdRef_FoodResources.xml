@@ -43,12 +43,14 @@
 			<Flammability>1.0</Flammability>
 			<DeteriorationRate>5</DeteriorationRate>
 			<MarketValue>4</MarketValue>
+			<Nutrition>0.25</Nutrition>
+			<Mass>0.44</Mass>
 		</statBases>
 		<ingestible>
 			<preferability>RawBad</preferability>
-			<nutrition>0.25</nutrition>
+			<tasteThought>AteRawFood</tasteThought>
 			<ingestEffect>EatVegetarian</ingestEffect>
-			<ingestSound>Ingest_Beer</ingestSound>
+			<ingestSound>RawVegetable_Eat</ingestSound>
 			<foodType>Fluid, Processed, AnimalProduct</foodType>
 		</ingestible>
 		<thingCategories>
@@ -73,10 +75,11 @@
 			<Flammability>1.0</Flammability>
 			<DeteriorationRate>5</DeteriorationRate>
 			<MarketValue>4</MarketValue>
+			<Nutrition>0.25</Nutrition>
+			<Mass>0.44</Mass>
 		</statBases>
 		<ingestible>
 			<preferability>RawBad</preferability>
-			<nutrition>0.25</nutrition>
 			<ingestEffect>EatVegetarian</ingestEffect>
 			<ingestSound>Ingest_Beer</ingestSound>
 			<foodType>Fluid, Processed</foodType>
@@ -134,16 +137,16 @@
 		<description>A synthetic mixture of Algae-Kryll Goo and Electrolyte Solution. Everything the body needs, and then some. Addictive, disgusting, and strangely delicious.</description>
 		<graphicData>
 			<texPath>Things/Item/Meal/NutrientPaste</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
+			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<statBases>
 			<DeteriorationRate>5</DeteriorationRate>
 			<MarketValue>15</MarketValue>
 			<Mass>0.3</Mass>
+			<Nutrition>0.85</Nutrition>
 		</statBases>
 		<ingestible>
 			<preferability>MealSimple</preferability>
-			<nutrition>0.85</nutrition>
 			<ingestEffect>EatVegetarian</ingestEffect>
 			<ingestSound>Meal_Eat</ingestSound>
 			<foodType>Processed</foodType>
