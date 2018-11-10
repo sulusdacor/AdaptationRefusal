@@ -136,7 +136,7 @@
 		<label>synth meal</label>
 		<description>A synthetic mixture of Algae-Kryll Goo and Electrolyte Solution. Everything the body needs, and then some. Addictive, disgusting, and strangely delicious.</description>
 		<graphicData>
-			<texPath>Things/Item/Meal/NutrientPaste</texPath>
+			<texPath>AR_synthmeal</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<statBases>
@@ -165,6 +165,7 @@
 			</li>
 		</comps>
 		<socialPropernessMatters>true</socialPropernessMatters>
+		<uiIconForStackCount>1</uiIconForStackCount>
 		
 	</ThingDef>
 

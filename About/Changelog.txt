@@ -66,3 +66,7 @@ personal changelog for mod "Adaptation Refusal"
 	- rimworld 1.0 update
 	- added mass 0.44 from mealbase vanilla to all meal type stuff
 	- added weapon mass, pistol=1.5 (vanilla auto pistol is 1.2, rest vanilla values), sniper=4, assault=3.5 
+
+- 10/11/2018
+
+	- added synthmeal stackcount texture
